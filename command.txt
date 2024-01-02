@@ -1,0 +1,22 @@
+Create the all directory where you want to run he docker-compose file and give the 777 permission to all directory
+  sonarqube_conf:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_bundled-plugins:
+  postgresql:
+  postgresql_data:
+
+#------Docker command for down the sonar server & DB-------#
+docker-compose -f docker-compose.yml down
+
+#------Docker command for start the sonar server & DB-------#
+docker-compose -f docker-compose.yml up -d
+
+##------------Sonar Command--------##
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=<project-key-name> \
+  -Dsonar.projectName='<project-name>' \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=<project-token>
+
+  
