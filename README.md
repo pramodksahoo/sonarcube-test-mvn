@@ -15,9 +15,9 @@ This project was generated with [Docker-compose]([https://github.com/angular/ang
 ## Installation
 
 ### Prerequisites
-Java 8 and above
-Maven
-Docker
+``Java 8 and above`` 
+``Maven`` 
+``Docker``
 
 ### Installing SonarQube Locally via Docker
 
@@ -43,3 +43,8 @@ First, we need to create a project in the SonarQube.
 
 Let’s give the project display name and the key then click on the setup button.
 
+### Summary
+
+The goal of SonarQube is to empower developers first and to grow an open community around the quality and security of code.
+
+`Code Quality is one of the most important aspects of software engineering.`
